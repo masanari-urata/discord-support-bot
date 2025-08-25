@@ -47,4 +47,6 @@ jobs:
             --region ${{ secrets.GCP_REGION }} \
             --platform managed \
             --service-account "$RUNTIME_SA" \
+            --set-secrets DISCORD_TOKEN=discord-token:latest \
+            --allow-unauthenticated \
             --quiet
